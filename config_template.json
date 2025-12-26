@@ -1,0 +1,17 @@
+{
+  "api_key": "YOUR_GEMINI_API_KEY_HERE",
+  "model_std": "models/gemini-2.0-flash-lite",
+  "model_adv": "models/gemini-1.5-pro",
+  "ui_lang": "English",
+  "target_lang": "Simplified Chinese",
+  "custom_target": "",
+  "newline_code": "{换行}",
+  "safety_unlock": false,
+  "glossary": [],
+  "regex": [
+    "{.*?}",
+    "<.*?>",
+    "@.*?@"
+  ],
+  "extra_instruction": ""
+}
