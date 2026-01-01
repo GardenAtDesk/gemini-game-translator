@@ -7,11 +7,16 @@
   "custom_target": "",
   "newline_code": "{换行}",
   "safety_unlock": false,
+  "auto_translate": false,
+  "price_std_in": 0.075,
+  "price_std_out": 0.30,
+  "price_adv_in": 3.50,
+  "price_adv_out": 10.50,
   "glossary": [],
   "regex": [
-    "{.*?}",
+    "\\{.*?\\}",
     "<.*?>",
-    "@.*?@"
+    "\\@.*?\\@"
   ],
   "extra_instruction": ""
 }
