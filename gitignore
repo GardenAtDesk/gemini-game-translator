@@ -1,29 +1,19 @@
-# Config files with API keys
+# User Config (contains API key)
 config_v6.json
-config*.json
-!config_template.json
 
 # Python
-__pycache__/
 *.pyc
 *.pyo
-*.pyd
-.Python
+__pycache__/
 *.so
 *.egg
-*.egg-info/
+*.egg-info
 dist/
 build/
-.eggs/
 
-# Working/export files
+# Working Files
 *_working_progress.csv
 *_final_export.csv
-
-# Virtual Environment
-venv/
-env/
-ENV/
 
 # IDE
 .vscode/
@@ -37,5 +27,6 @@ ENV/
 Thumbs.db
 desktop.ini
 
-# Logs
-*.log
+# Test Files
+test_*.csv
+demo_*.csv
