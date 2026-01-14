@@ -1,8 +1,8 @@
 # Game Text Translator | 游戏文本翻译助手 | ゲームテキスト翻訳アシスタント
 
-> 📢 **Latest Version: v6.9** - Now with batch translation improvements & cost tracking!
+> 📢 **Latest Version: v7.6.1** - Config path fixes, auto-retry, trilingual docs!
 >
-> 👉 [Download Latest Release](https://github.com/GardenAtDesk/gemini-game-translator/releases/latest)
+> 👉 [Download on itch.io](https://gardenatdesk.itch.io/game-translator-helper) | [GitHub Releases](https://github.com/GardenAtDesk/gemini-game-translator/releases/latest)
 
 > A free, open-source translation tool for indie game developers using Google Gemini AI
 > 
@@ -10,9 +10,9 @@
 >
 > Google Gemini AIを使用した無料のオープンソースゲームテキスト翻訳ツール
 
+[![Download on itch.io](https://img.shields.io/badge/Download-itch.io-FA5C5C?style=for-the-badge&logo=itch.io&logoColor=white)](https://gardenatdesk.itch.io/game-translator-helper)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Latest Release](https://img.shields.io/github/v/release/GardenAtDesk/gemini-game-translator)](https://github.com/GardenAtDesk/gemini-game-translator/releases/latest)
-[![GitHub Stars](https://img.shields.io/github/stars/GardenAtDesk/gemini-game-translator)](https://github.com/GardenAtDesk/gemini-game-translator/stargazers)
 
 Made by an indie game dev who got tired of translating game text manually.
 
@@ -22,25 +22,36 @@ Made by an indie game dev who got tired of translating game text manually.
 
 ---
 
+## 🆕 What's New in v7.6.1
+
+- ✅ **Fixed config file path bug** - Now works from any directory
+- ✅ **Auto-retry for API rate limits** - No more failed batch translations
+- ✅ **Improved Visual QA stability** - Better font handling
+- 🌐 **Full trilingual documentation** - English, 中文, 日本語
+
+[See full changelog](https://github.com/GardenAtDesk/gemini-game-translator/releases/tag/v7.6.1)
+
+---
+
 ## 📥 Download / 下载 / ダウンロード
 
-### For Non-Tech Users (Windows):
-1. Go to [**Releases**](https://github.com/GardenAtDesk/gemini-game-translator/releases) page
-2. Download **v6.9** (latest)
-3. Extract and run (No Python required!)
+### 🪟 For Windows Users (Recommended):
+**Download:** [itch.io - Windows Version](https://gardenatdesk.itch.io/game-translator-helper) (~64MB)
+- Standalone .exe - **No Python needed!**
+- Just extract and run
 
-### 给普通用户（Windows）：
-1. 访问 [**Releases**](https://github.com/GardenAtDesk/gemini-game-translator/releases) 页面
-2. 下载 **v6.9**（最新版）
-3. 解压后运行（无需安装Python！）
+### 🐍 For Developers / Mac / Linux:
+**Download:** [itch.io - Python Version](https://gardenatdesk.itch.io/game-translator-helper) (~100KB)
+- Full source code
+- Cross-platform
 
-### 一般ユーザー向け（Windows）：
-1. [**Releases**](https://github.com/GardenAtDesk/gemini-game-translator/releases) ページへ
-2. **v6.9**（最新版）をダウンロード
-3. 解凍して実行（Python不要！）
-
-### For Developers:
-Clone this repository or download `GameTranslator6_9.py` directly.
+**Or clone this repository:**
+```bash
+git clone https://github.com/GardenAtDesk/gemini-game-translator.git
+cd gemini-game-translator
+pip install pandas google-generativeai ttkbootstrap
+python GameTranslator7_6_1.py
+```
 
 ---
 
@@ -57,159 +68,109 @@ Clone this repository or download `GameTranslator6_9.py` directly.
 ### ⚠️ Important Disclaimers
 
 **API Usage:**
-- This tool requires a **Google Gemini API key** (you must obtain your own for free at [Google AI Studio](https://aistudio.google.com/app/apikey))
-- API calls are **charged by Google** after free tier (typically ~15 RPM for free accounts)
-- I am NOT responsible for your API costs or quota limits
+- Requires **Google Gemini API key** (free at [Google AI Studio](https://aistudio.google.com/app/apikey))
+- API calls charged by Google after free tier (~15 RPM free)
+- I'm NOT responsible for your API costs
 
 **Safety Settings:**
-- The "Unlock Safety Filters" option may violate Google's Terms of Service
-- Using it could result in **account suspension or API key revocation**
-- Use at your own risk - I recommend keeping filters enabled
+- "Unlock Safety Filters" may violate Google's TOS
+- Could result in **account suspension**
+- Use at your own risk
 
 **No Support:**
-- ✅ Code is open-source, modify as you wish
-- ❌ No technical support provided
-- ❌ No feature requests accepted
-- ❌ Not guaranteed to be maintained
+- ✅ Code is open-source, fork freely
+- ❌ No technical support
+- ❌ No feature requests
+- ❌ No maintenance guarantees
 
 **Privacy:**
-- Your API key and translations stay on YOUR computer
-- Config files are stored locally only
-- Never commit `config_v6.json` to Git (it's in .gitignore)
+- API key and data stay on YOUR computer
+- Config files are local only
+- Never commit `config_v7.json` to Git
 
-### ✨ Features
+### ✨ Key Features
 
+- 🎮 **Visual QA Editor** - Preview text width/overflow in simulated game window
 - 🌍 **Multi-language UI** (English, 中文, 日本語)
-- 🎯 **Translate to 12+ languages** (English, Chinese, Japanese, Korean, French, German, Spanish, Portuguese, Russian, Italian, and more)
-- ⚡ **Batch translation** with progress tracking (v6.9+)
-- 💰 **Real-time cost monitoring** - estimate only (v6.9+)
-- 📊 **Success/failure statistics** for batch operations (v6.9+)
-- 📚 **Custom glossary support** (define your own term translations)
-- 🔒 **Regex protection** (preserve variables like `{player_name}`, `@value@`)
-- 💾 **Auto-save progress** (resume anytime with `_working_progress.csv`)
-- 🎨 **Clean, modern interface** (built with ttkbootstrap)
-- 🚀 **Powered by Gemini API** (much cheaper than GPT-4)
+- 🎯 **Translate to 100+ languages** via Gemini
+- ⚡ **Batch translation** with auto-retry (v7.6.1!)
+- 💰 **Real-time cost monitoring** (estimate only)
+- 📚 **Custom glossary** for consistent terminology
+- 🔒 **Regex protection** for game variables (`{tag}`, `@var@`)
+- 💾 **Auto-save progress** (`_working_progress.csv`)
 
 ### 🚀 Quick Start
 
 **1. Get API Key:**
-- Go to [Google AI Studio](https://aistudio.google.com/app/apikey)
-- Create a free API key (Google account required)
+- Visit [Google AI Studio](https://aistudio.google.com/app/apikey)
+- Create free API key
 
-**2. Install Dependencies:**
+**2. Install (Python version only):**
 ```bash
-pip install -r requirements.txt
+pip install pandas google-generativeai ttkbootstrap
 ```
 
-**3. Configure:**
-```bash
-# Copy template
-cp config_template.json config_v6.json
+**3. Run:**
+- **Windows .exe:** Just double-click
+- **Python:** `python GameTranslator7_6_1.py`
 
-# Edit config_v6.json and add your API key
-```
+**4. Configure:**
+- Paste API key in top-left field
+- Select UI language
+- Click "🔍 Detect Models" to verify
 
-**4. Run:**
-```bash
-python GameTranslator6_9.py
-```
+### 📖 Basic Usage
 
-### 📖 Usage
-
-1. Click **"Load CSV"** and select your game text file
-   - CSV format: Column A = source text, Column B = translation (optional)
-2. Click **"Translate Page"** for batch translation
-3. Edit translations manually if needed
-4. Use glossary to define consistent terminology
+1. Click **"Load Source"** → Select CSV file
+2. Click **"Translate Page"** for batch (50 lines)
+3. Or navigate with `<< Prev` / `Next >>` for single lines
+4. Use **Visual QA** to check text overflow
 5. Click **"Export CSV"** when done
 
-**CSV Format Example:**
+**CSV Format:**
 ```csv
+Source,Translation
 Hello,你好
-Attack,攻击
 HP: {value},生命值: {value}
-Welcome to @TOWN@,欢迎来到@TOWN@
 ```
 
 ### 💰 Cost Estimate
 
 Using Gemini 2.0 Flash Lite (recommended):
-- **~$0.02 per 1,000 lines** (extremely cheap)
-- **10,000 lines ≈ $0.60 USD** (input + output)
+- **~$0.60 per 10,000 lines** (extremely cheap!)
 - Free tier covers most small/medium indie games
 
-### 💵 Cost Monitoring (v6.9+)
-
-The tool includes a **rough cost estimator** based on token usage.
-
-**⚠️ Important:**
-- This is an **ESTIMATE ONLY**
-- Input and output token prices are different
-- Actual costs may vary significantly
-- Always check your official billing from Google
-- We are NOT responsible for any billing discrepancies
-
-**How to Use:**
-1. Check official Gemini pricing: https://ai.google.dev/gemini-api/docs/pricing
-2. Enter your own prices in the Cost Monitor panel
-3. Monitor estimated usage during translation
-4. Verify actual costs in Google Cloud Console
-
-**Example Pricing (as of Jan 2025):**
-- Gemini 2.0 Flash Lite: $0.075/1M input, $0.30/1M output
-- Gemini 1.5 Pro: $3.50/1M input, $10.50/1M output
-
-### 🛠️ Advanced Features
-
-**Glossary:**
-- Define term pairs: `HP=生命值`, `Attack=攻击`
-- Ensures consistent translation across entire project
-
-**Regex Protection:**
-- Protects special codes: `{变量}`, `<tag>`, `@placeholder@`
-- Prevents AI from translating game variables
-
-**Custom Instructions:**
-- Add game-specific context in the prompt box
-- Example: "Use casual tone", "This is a fantasy RPG"
-
-**Batch Translation:**
-- Translate entire pages at once
-- See progress in real-time
-- Get success/failure statistics
+⚠️ Cost monitor is ESTIMATE ONLY. Check official billing at [Google Cloud Console](https://console.cloud.google.com/).
 
 ### 💝 Support My Work
 
-I'm an indie game developer working on **The Sheepdog** - a cozy tactics game.
+I'm an indie game dev making **The Sheepdog** - a cozy tactics game.
 
-If this tool saves you time:
+If this tool helps you:
 - ⭐ Star this repo
 - ☕ [Buy me a coffee on Ko-fi](https://ko-fi.com/gardenatdesk)
 - 🐦 Follow [@GardenAtDesk on TikTok](https://www.tiktok.com/@gardenatdesk)
 
 ### 📝 License
 
-MIT License - do whatever you want, just don't sue me.
+MIT License - use freely, don't sue me.
 
 ### ❓ FAQ
 
-**Q: Can you add feature X?**  
-A: No. This is a personal tool I'm sharing. Fork it if you need changes.
+**Q: Feature requests?**  
+A: No. Fork it yourself.
 
-**Q: Why am I getting errors?**  
-A: Check your API key, network connection, and quota limits.
+**Q: Errors?**  
+A: Check API key, network, quota.
 
-**Q: Is this better than DeepL/ChatGPT?**  
-A: Gemini is cheaper. Quality depends on your use case. Try it yourself.
+**Q: Better than DeepL/ChatGPT?**  
+A: Gemini is cheaper. Try it.
 
-**Q: My account got banned!**  
-A: I warned you about the safety unlock feature. Don't use it.
+**Q: Account banned?**  
+A: Told you not to unlock safety filters.
 
-**Q: Does this work on Mac/Linux?**  
-A: Should work anywhere Python runs, but only tested on Windows.
-
-**Q: How accurate is the cost estimator?**  
-A: It's a rough estimate. Always check your actual Google Cloud billing.
+**Q: Mac/Linux support?**  
+A: Should work, only tested on Windows.
 
 ---
 
@@ -218,120 +179,92 @@ A: It's a rough estimate. Always check your actual Google Cloud billing.
 ### ⚠️ 重要声明
 
 **API使用：**
-- 本工具需要 **Google Gemini API密钥**（需要自己在[Google AI Studio](https://aistudio.google.com/app/apikey)免费申请）
-- API调用在免费额度后**按量收费**（免费账户通常约15 RPM）
-- 我不对你的API费用或配额限制负责
+- 需要**Google Gemini API密钥**（[Google AI Studio](https://aistudio.google.com/app/apikey)免费获取）
+- 超过免费额度后按量收费（~15 RPM免费）
+- 我不对你的API费用负责
 
 **安全设置：**
-- "解锁安全限制"选项可能违反Google服务条款
-- 使用可能导致**账号被封或API密钥被撤销**
-- 风险自负 - 建议保持过滤器开启
+- "解锁安全限制"可能违反Google TOS
+- 可能导致**账号封禁**
+- 风险自负
 
 **无技术支持：**
-- ✅ 代码开源，随意修改
+- ✅ 开源代码，随意Fork
 - ❌ 不提供技术支持
 - ❌ 不接受功能请求
-- ❌ 不保证持续更新
+- ❌ 不保证维护
 
 **隐私：**
-- 你的API密钥和翻译数据保存在你的电脑上
+- API密钥和数据保存在你的电脑
 - 配置文件仅本地存储
-- 切勿将`config_v6.json`提交到Git（已在.gitignore中）
+- 切勿提交`config_v7.json`到Git
 
-### ✨ 功能特点
+### ✨ 主要功能
 
+- 🎮 **Visual QA编辑器** - 在模拟游戏窗口预览文本宽度/溢出
 - 🌍 **多语言界面**（英文、中文、日文）
-- 🎯 **支持12+种目标语言**（英语、中文、日语、韩语、法语、德语、西班牙语、葡萄牙语、俄语、意大利语等）
-- ⚡ **批量翻译**带进度显示（v6.9+）
-- 💰 **实时成本估算** - 仅供参考（v6.9+）
-- 📊 **成功/失败统计**（v6.9+）
-- 📚 **自定义术语表**（定义专属术语翻译）
-- 🔒 **正则表达式保护**（保护变量如`{player_name}`、`@value@`）
-- 💾 **自动保存进度**（随时恢复，保存为`_working_progress.csv`）
-- 🎨 **简洁现代的界面**（基于ttkbootstrap）
-- 🚀 **Gemini API驱动**（比GPT-4便宜得多）
+- 🎯 **翻译到100+种语言**（Gemini支持）
+- ⚡ **批量翻译**带自动重试（v7.6.1!）
+- 💰 **实时成本监控**（仅供参考）
+- 📚 **自定义术语表**保证一致性
+- 🔒 **正则保护**游戏变量（`{tag}`、`@var@`）
+- 💾 **自动保存**进度（`_working_progress.csv`）
 
 ### 🚀 快速开始
 
 **1. 获取API密钥：**
 - 访问[Google AI Studio](https://aistudio.google.com/app/apikey)
-- 创建免费API密钥（需要Google账号）
+- 创建免费密钥
 
-**2. 安装依赖：**
+**2. 安装（仅Python版本）：**
 ```bash
-pip install -r requirements.txt
+pip install pandas google-generativeai ttkbootstrap
 ```
 
-**3. 配置：**
-```bash
-# 复制模板
-cp config_template.json config_v6.json
+**3. 运行：**
+- **Windows .exe：**直接双击
+- **Python：**`python GameTranslator7_6_1.py`
 
-# 编辑config_v6.json并添加你的API密钥
-```
+**4. 配置：**
+- 在左上角粘贴API密钥
+- 选择UI语言
+- 点击"🔍 检测模型"验证
 
-**4. 运行：**
-```bash
-python GameTranslator6_9.py
-```
+### 📖 基本使用
 
-### 📖 使用方法
-
-1. 点击**"加载源文件"**并选择游戏文本CSV文件
-   - CSV格式：A列=原文，B列=译文（可选）
-2. 点击**"翻译当前页"**进行批量翻译
-3. 需要时手动编辑译文
-4. 使用术语表定义一致的术语翻译
+1. 点击**"加载源文件"** → 选择CSV
+2. 点击**"翻译本页"**批量翻译（50行）
+3. 或用`<< 上一条` / `下一条 >>`单行翻译
+4. 用**Visual QA**检查文本溢出
 5. 完成后点击**"导出成品"**
 
-**CSV格式示例：**
+**CSV格式：**
 ```csv
+原文,译文
 Hello,你好
-Attack,攻击
 HP: {value},生命值: {value}
-Welcome to @TOWN@,欢迎来到@TOWN@
 ```
 
 ### 💰 成本估算
 
 使用Gemini 2.0 Flash Lite（推荐）：
-- **每1000行约$0.02**（极其便宜）
-- **10,000行 ≈ $0.60美元**（包含输入+输出）
-- 免费额度足够覆盖大多数中小型独立游戏
+- **每10,000行约$0.60**（极其便宜！）
+- 免费额度覆盖大多数中小型游戏
 
-### 💵 成本监控（v6.9+）
-
-工具包含基于token使用的**粗略成本估算器**。
-
-**⚠️ 重要说明：**
-- 这**仅供参考**
-- 输入和输出token价格不同
-- 实际成本可能有显著差异
-- 请务必查看Google官方账单
-- 我们不对任何账单差异负责
-
-**使用方法：**
-1. 查看Gemini官方定价：https://ai.google.dev/gemini-api/docs/pricing
-2. 在成本监控面板输入你的价格
-3. 翻译时监控预估使用量
-4. 在Google Cloud控制台验证实际成本
-
-**参考价格（截至2025年1月）：**
-- Gemini 2.0 Flash Lite: $0.075/百万输入, $0.30/百万输出
-- Gemini 1.5 Pro: $3.50/百万输入, $10.50/百万输出
+⚠️ 成本监控仅供参考。查看官方账单：[Google Cloud控制台](https://console.cloud.google.com/)。
 
 ### 💝 支持我的工作
 
-我是一名独立游戏开发者，正在制作**The Sheepdog**（牧羊犬）- 一款温馨的战术游戏。
+我正在制作独立游戏**The Sheepdog**（牧羊犬）- 温馨战术游戏。
 
-如果这个工具帮到了你：
-- ⭐ 给这个仓库点个Star
-- ☕ [在Ko-fi上请我喝杯咖啡](https://ko-fi.com/gardenatdesk)
+如果这个工具帮到你：
+- ⭐ 给仓库点Star
+- ☕ [在Ko-fi请我喝咖啡](https://ko-fi.com/gardenatdesk)
 - 🐦 关注[@GardenAtDesk的TikTok](https://www.tiktok.com/@gardenatdesk)
 
 ### 📝 许可证
 
-MIT许可证 - 随便用，但别告我。
+MIT许可证 - 随便用，别告我。
 
 ---
 
@@ -339,121 +272,93 @@ MIT许可证 - 随便用，但别告我。
 
 ### ⚠️ 重要な免責事項
 
-**API使用について：**
-- このツールには**Google Gemini APIキー**が必要です（[Google AI Studio](https://aistudio.google.com/app/apikey)で無料取得）
-- API呼び出しは無料枠超過後に**従量課金**されます（無料アカウントは通常約15 RPM）
-- APIコストや制限については一切責任を負いません
+**API使用：**
+- **Google Gemini APIキー**必要（[Google AI Studio](https://aistudio.google.com/app/apikey)で無料取得）
+- 無料枠超過後は従量課金（~15 RPM無料）
+- APIコストは自己責任
 
 **安全設定：**
-- 「セーフティ解除」オプションはGoogleの利用規約に違反する可能性があります
-- 使用すると**アカウント停止またはAPIキー取り消し**の可能性があります
-- 自己責任で使用してください - フィルターは有効のままにすることをお勧めします
+- 「セーフティ解除」はGoogle TOS違反の可能性
+- **アカウント停止**のリスク
+- 自己責任で使用
 
 **サポートなし：**
-- ✅ コードはオープンソース、自由に改変可
-- ❌ 技術サポートは提供しません
-- ❌ 機能リクエストは受け付けません
-- ❌ 継続的なメンテナンスは保証しません
+- ✅ オープンソース、自由にFork
+- ❌ 技術サポートなし
+- ❌ 機能リクエスト不可
+- ❌ メンテナンス保証なし
 
 **プライバシー：**
-- APIキーと翻訳データはあなたのコンピュータに保存されます
-- 設定ファイルはローカルのみに保存
-- `config_v6.json`をGitにコミットしないでください（.gitignoreに含まれています）
+- APIキーとデータはあなたのPC内
+- 設定ファイルはローカルのみ
+- `config_v7.json`をGitにコミットしない
 
-### ✨ 機能
+### ✨ 主な機能
 
+- 🎮 **Visual QAエディター** - シミュレート画面でテキスト幅/溢れをプレビュー
 - 🌍 **多言語UI**（英語、中国語、日本語）
-- 🎯 **12以上の言語に翻訳可能**（英語、中国語、日本語、韓国語、フランス語、ドイツ語、スペイン語、ポルトガル語、ロシア語、イタリア語など）
-- ⚡ **一括翻訳**進捗表示付き（v6.9+）
-- 💰 **リアルタイムコスト監視** - 参考のみ（v6.9+）
-- 📊 **成功/失敗統計**（v6.9+）
-- 📚 **カスタム用語集サポート**（独自の用語翻訳を定義）
-- 🔒 **正規表現保護**（`{player_name}`、`@value@`などの変数を保護）
-- 💾 **自動進捗保存**（`_working_progress.csv`でいつでも再開可能）
-- 🎨 **クリーンでモダンなインターフェース**（ttkbootstrapベース）
-- ⚡ **Gemini API駆動**（GPT-4より遥かに安価）
+- 🎯 **100以上の言語に翻訳**（Gemini対応）
+- ⚡ **一括翻訳**自動リトライ付き（v7.6.1!）
+- 💰 **リアルタイムコスト監視**（参考値）
+- 📚 **カスタム用語集**で一貫性確保
+- 🔒 **正規表現保護**でゲーム変数守る（`{tag}`、`@var@`）
+- 💾 **自動保存**（`_working_progress.csv`）
 
 ### 🚀 クイックスタート
 
-**1. APIキーを取得：**
+**1. APIキー取得：**
 - [Google AI Studio](https://aistudio.google.com/app/apikey)にアクセス
-- 無料APIキーを作成（Googleアカウント必要）
+- 無料キー作成
 
-**2. 依存関係をインストール：**
+**2. インストール（Python版のみ）：**
 ```bash
-pip install -r requirements.txt
+pip install pandas google-generativeai ttkbootstrap
 ```
 
-**3. 設定：**
-```bash
-# テンプレートをコピー
-cp config_template.json config_v6.json
+**3. 実行：**
+- **Windows .exe：**ダブルクリック
+- **Python：**`python GameTranslator7_6_1.py`
 
-# config_v6.jsonを編集してAPIキーを追加
-```
+**4. 設定：**
+- 左上にAPIキーを貼り付け
+- UI言語選択
+- 「🔍 モデル検出」で確認
 
-**4. 実行：**
-```bash
-python GameTranslator6_9.py
-```
+### 📖 基本的な使い方
 
-### 📖 使い方
+1. **「CSV読込」**クリック → CSVファイル選択
+2. **「ページ翻訳」**で一括翻訳（50行）
+3. または`<< 前へ` / `次へ >>`で1行ずつ
+4. **Visual QA**でテキスト溢れチェック
+5. 完了したら**「CSV出力」**クリック
 
-1. **「CSV読込」**をクリックしてゲームテキストファイルを選択
-   - CSV形式：A列=原文、B列=訳文（オプション）
-2. **「ページ翻訳」**をクリックして一括翻訳
-3. 必要に応じて手動で翻訳を編集
-4. 用語集を使用して一貫した用語翻訳を定義
-5. 完了したら**「CSV出力」**をクリック
-
-**CSV形式の例：**
+**CSV形式：**
 ```csv
+原文,訳文
 Hello,こんにちは
-Attack,攻撃
 HP: {value},HP: {value}
-Welcome to @TOWN@,@TOWN@へようこそ
 ```
 
 ### 💰 コスト見積もり
 
 Gemini 2.0 Flash Lite使用時（推奨）：
-- **1000行あたり約$0.02**（非常に安価）
-- **10,000行 ≈ $0.60 USD**（入力+出力）
-- 無料枠で中小規模のインディーゲームをカバー可能
+- **10,000行あたり約$0.60**（非常に安価！）
+- 無料枠で中小規模ゲームカバー可能
 
-### 💵 コスト監視（v6.9+）
-
-トークン使用量に基づく**おおよそのコスト推定機能**を搭載。
-
-**⚠️ 重要：**
-- これは**推定値のみ**です
-- 入力と出力のトークン価格は異なります
-- 実際のコストは大きく異なる場合があります
-- 必ずGoogleの公式請求を確認してください
-- 請求額の相違について一切責任を負いません
-
-**使用方法：**
-1. Gemini公式価格を確認：https://ai.google.dev/gemini-api/docs/pricing
-2. コストモニターパネルに価格を入力
-3. 翻訳中に推定使用量を監視
-4. Google Cloud Consoleで実際のコストを確認
-
-**参考価格（2025年1月時点）：**
-- Gemini 2.0 Flash Lite: $0.075/100万入力, $0.30/100万出力
-- Gemini 1.5 Pro: $3.50/100万入力, $10.50/100万出力
+⚠️ コスト監視は参考値のみ。公式請求確認：[Google Cloudコンソール](https://console.cloud.google.com/)。
 
 ### 💝 サポート
 
-インディーゲーム開発者として**The Sheepdog**（羊飼いの犬）- 心温まる戦術ゲームを制作中です。
+インディーゲーム**The Sheepdog**（羊飼いの犬）制作中 - 心温まる戦術ゲーム。
 
 このツールが役立ったら：
-- ⭐ このリポジトリにスターを
+- ⭐ リポジトリにスター
 - ☕ [Ko-fiでコーヒーを奢る](https://ko-fi.com/gardenatdesk)
-- 🐦 [TikTok @GardenAtDeskをフォロー](https://www.tiktok.com/@gardenatdesk)
+- 🐦 [TikTok @GardenAtDeskフォロー](https://www.tiktok.com/@gardenatdesk)
 
 ### 📝 ライセンス
 
-MITライセンス - 自由に使ってください、訴えないでください。
+MITライセンス - 自由に使用、訴えないで。
 
 ---
 
