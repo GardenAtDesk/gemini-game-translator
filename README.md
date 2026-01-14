@@ -1,3 +1,5 @@
+A desktop game localization helper with visual UI overflow QA, glossary control, and Gemini-powered translation.
+
 # Game Text Translator | 游戏文本翻译助手 | ゲームテキスト翻訳アシスタント
 
 > 📢 **Latest Version: v7.6.1** - Config path fixes, auto-retry, trilingual docs!
