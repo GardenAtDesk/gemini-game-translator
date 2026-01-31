@@ -1,0 +1,11 @@
+{
+  "daily_translation_limit": 1000,
+  "daily_cost_limit": 5.0,
+  "batch_confirm_threshold": 50,
+  "translation_interval": 4.0,
+  "max_consecutive_errors": 3,
+  "limits_enabled": true,
+  "today_date": "2026-01-31",
+  "today_translation_count": 0,
+  "today_cost": 0.0
+}
