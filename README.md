@@ -2,9 +2,19 @@ A desktop game localization helper with visual UI overflow QA, glossary control,
 
 # Game Text Translator | 游戏文本翻译助手 | ゲームテキスト翻訳アシスタント
 
+<p align="center">
+  <a href="https://store.steampowered.com/app/4881930/">
+    <img src="assets/goblin-forge-banner.png" alt="Goblin Forge — Game Localization Workbench" width="760">
+  </a>
+</p>
+
 > ### 🔨 The full version is here → **[Goblin Forge — Game Localization Workbench](https://store.steampowered.com/app/4881930/)**
 >
-> This script grew into a full CAT workbench for game localization: **lossless round-trip** (export matches import exactly), **translation memory**, **cross-project glossary**, **offline-first**, and **BYO-AI** (bring your own API key).
+> **EN** — This script grew into a full CAT workbench for game localization: **lossless round-trip** (export matches import exactly), **translation memory**, **cross-project glossary**, **offline-first**, and **BYO-AI** (bring your own API key).
+>
+> **中文** — 这个脚本已长成一套完整的游戏本地化 CAT 工作台：**无损往返**（导出与导入逐字一致）、**翻译记忆库**、**跨项目术语表**、**离线优先**、**自带 AI**（用你自己的 API key）。
+>
+> **日本語** — このスクリプトは、ゲームローカライズ向けの本格的な CAT ワークベンチへと成長しました：**ロスレスな往復変換**（エクスポート＝インポート）、**翻訳メモリ**、**プロジェクト横断の用語集**、**オフライン優先**、**BYO-AI**（自分の API キー）。
 >
 > 👉 **[Wishlist on Steam](https://store.steampowered.com/app/4881930/)** · [goblinry.com](https://goblinry.com)
 >
