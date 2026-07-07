@@ -2,6 +2,18 @@ A desktop game localization helper with visual UI overflow QA, glossary control,
 
 # Game Text Translator | 游戏文本翻译助手 | ゲームテキスト翻訳アシスタント
 
+> ### 🔨 The full version is here → **[Goblin Forge — Game Localization Workbench](https://store.steampowered.com/app/4881930/)**
+>
+> This script grew into a full CAT workbench for game localization: **lossless round-trip** (export matches import exactly), **translation memory**, **cross-project glossary**, **offline-first**, and **BYO-AI** (bring your own API key).
+>
+> 👉 **[Wishlist on Steam](https://store.steampowered.com/app/4881930/)** · [goblinry.com](https://goblinry.com)
+>
+> *This repo stays available. Goblin Forge is where active development goes.*
+
+[![Wishlist Goblin Forge on Steam](https://img.shields.io/badge/Wishlist-Goblin_Forge_on_Steam-1b2838?style=for-the-badge&logo=steam&logoColor=white)](https://store.steampowered.com/app/4881930/)
+
+---
+
 > **Latest Version: v7.9.6** - Visual QA Final Edition with Auto-Wrap, Safety Protection & More!
 >
 > [Download on itch.io](https://gardenatdesk.itch.io/game-translator-helper) | [GitHub Releases](https://github.com/GardenAtDesk/gemini-game-translator/releases/latest)
