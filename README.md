@@ -8,7 +8,7 @@ A desktop game localization helper with visual UI overflow QA, glossary control,
   </a>
 </p>
 
-> ### 🔨 The full version is here → **[Goblin Forge — Game Localization Workbench](https://store.steampowered.com/app/4881930/)**
+> ### 🔨 The full version is here → **[Goblin Forge — Game Localization Workbench](https://store.steampowered.com/app/4881930/?utm_source=github&utm_medium=readme&utm_campaign=ea_launch&utm_content=top_callout)**
 >
 > **EN** — This script grew into a full CAT workbench for game localization: **lossless round-trip** (export matches import exactly), **translation memory**, **cross-project glossary**, **offline-first**, and **BYO-AI** (bring your own API key).
 >
@@ -16,7 +16,9 @@ A desktop game localization helper with visual UI overflow QA, glossary control,
 >
 > **日本語** — このスクリプトは、ゲームローカライズ向けの本格的な CAT ワークベンチへと成長しました：**ロスレスな往復変換**（エクスポート＝インポート）、**翻訳メモリ**、**プロジェクト横断の用語集**、**オフライン優先**、**BYO-AI**（自分の API キー）。
 >
-> 👉 **[Wishlist on Steam](https://store.steampowered.com/app/4881930/)** · [goblinry.com](https://goblinry.com)
+> **Early Access on Steam — Planned Dec 7, 2026 (15% launch discount · Buy once, no subscription)**
+>
+> 👉 **[Wishlist on Steam](https://store.steampowered.com/app/4881930/?utm_source=github&utm_medium=readme&utm_campaign=ea_launch&utm_content=top_callout)** · **[goblinry.com](https://goblinry.com/)** · **[Watch Video (1:41)](https://youtu.be/igz3mq6aBJw)**
 >
 > *This repo stays available. Goblin Forge is where active development goes.*
 
