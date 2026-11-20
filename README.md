@@ -10,11 +10,11 @@ A desktop game localization helper with visual UI overflow QA, glossary control,
 
 > ### 🔨 The full version is here → **[Goblin Forge — Game Localization Workbench](https://store.steampowered.com/app/4881930/?utm_source=github&utm_medium=readme&utm_campaign=ea_launch&utm_content=top_callout)**
 >
-> **EN** — This script grew into a full CAT workbench for game localization: **lossless round-trip** (export matches import exactly), **translation memory**, **cross-project glossary**, **offline-first**, and **BYO-AI** (bring your own API key).
+> **EN** — This script grew into a full CAT workbench for game localization: **structure-safe export** (everything except the translated text comes back unchanged, checked automatically on every export), **translation memory**, **cross-project glossary**, **offline-first**, and **BYO-AI** (bring your own API key).
 >
-> **中文** — 这个脚本已长成一套完整的游戏本地化 CAT 工作台：**无损往返**（导出与导入逐字一致）、**翻译记忆库**、**跨项目术语表**、**离线优先**、**自带 AI**（用你自己的 API key）。
+> **中文** — 这个脚本已长成一套完整的游戏本地化 CAT 工作台：**导出不动结构**（除了译文，其余原样保留，每次导出自动核对）、**翻译记忆库**、**跨项目术语表**、**离线优先**、**自带 AI**（用你自己的 API key）。
 >
-> **日本語** — このスクリプトは、ゲームローカライズ向けの本格的な CAT ワークベンチへと成長しました：**ロスレスな往復変換**（エクスポート＝インポート）、**翻訳メモリ**、**プロジェクト横断の用語集**、**オフライン優先**、**BYO-AI**（自分の API キー）。
+> **日本語** — このスクリプトは、ゲームローカライズ向けの本格的な CAT ワークベンチへと成長しました：**構造を崩さないエクスポート**（訳文以外はそのまま、エクスポートのたびに自動チェック）、**翻訳メモリ**、**プロジェクト横断の用語集**、**オフライン優先**、**BYO-AI**（自分の API キー）。
 >
 > **Early Access on Steam — Planned Dec 7, 2026 (15% launch discount · Buy once, no subscription)**
 >
